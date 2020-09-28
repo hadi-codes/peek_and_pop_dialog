@@ -1,7 +1,6 @@
 name: peek_and_pop_dialog
 description: A Flutter Widget that shows a dialog on LongPressStart and Hides on LongPressEnd.
 version: 0.0.1
-author: Abdelhadi Shaar
 homepage: https://github.com/bigblackclock/peek_and_pop_dialog/
 
 environment:
