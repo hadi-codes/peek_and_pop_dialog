@@ -1,0 +1,21 @@
+name: peek_and_pop_dialog
+description: A Flutter Widget that shows a dialog on LongPressStart and Hides on LongPressEnd.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  overlay_dialog: ^0.0.3
+  flutter_bloc: ^6.0.5
+  equatable: ^1.2.5
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
