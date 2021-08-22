@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:peek_and_pop_dialog/peek_and_pop_dialog.dart';
 
 class GridViewPage extends StatelessWidget {
-  const GridViewPage({Key key}) : super(key: key);
+  const GridViewPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
