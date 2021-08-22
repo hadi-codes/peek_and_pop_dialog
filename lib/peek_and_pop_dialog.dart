@@ -21,11 +21,10 @@ class PeekAndPopDialog extends StatefulWidget {
 }
 
 class _PeekAndPopDialogState extends State<PeekAndPopDialog> {
-  final bloc = PeekAndPopDialogCubit();
   @override
   Widget build(BuildContext context) {
-    return BlocProvider.value(
-      value: bloc,
+    return BlocProvider(
+      create: (_) => PeekAndPopDialogCubit(),
       child: BlocConsumer<PeekAndPopDialogCubit, bool>(
         listener: (context, isVisble) async {
           if (isVisble)
@@ -36,8 +35,10 @@ class _PeekAndPopDialogState extends State<PeekAndPopDialog> {
         },
         builder: (context, state) {
           return GestureDetector(
-            onLongPressStart: (_) => bloc.show(),
-            onLongPressEnd: (_) => bloc.hide(),
+            onLongPressStart: (_) =>
+                context.read<PeekAndPopDialogCubit>().updateState(),
+            onLongPressEnd: (_) =>
+                context.read<PeekAndPopDialogCubit>().updateState(),
             child: widget.child,
           );
         },
