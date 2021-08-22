@@ -1,7 +1,8 @@
-import 'package:example/pages/grid_view_example.dart';
-import 'package:example/pages/simple_example.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'grid_view_example.dart';
+import 'simple_example.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
